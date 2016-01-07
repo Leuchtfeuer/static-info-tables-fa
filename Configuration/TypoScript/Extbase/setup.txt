@@ -1,0 +1,42 @@
+config.tx_extbase {
+	persistence {
+		classes {
+			SJBR\StaticInfoTables\Domain\Model\Country {
+				mapping {
+					columns {
+						cn_short_fa.mapOnProperty = shortNameFa
+					}
+				}
+			}
+			SJBR\StaticInfoTables\Domain\Model\CountryZone {
+				mapping {
+					columns {
+						zn_name_fa.mapOnProperty = nameFa
+					}
+				}
+			}
+			SJBR\StaticInfoTables\Domain\Model\Currency {
+				mapping {
+					columns {
+						cu_name_fa.mapOnProperty = nameFa
+						cu_sub_name_fa.mapOnProperty = subdivisionNameFa
+					}
+				}
+			}
+			SJBR\StaticInfoTables\Domain\Model\Language {
+				mapping {
+					columns {
+						lg_name_fa.mapOnProperty = nameFa
+					}
+				}
+			}
+			SJBR\StaticInfoTables\Domain\Model\Territory {
+				mapping {
+					columns {
+						tr_name_fa.mapOnProperty = nameFa
+					}
+				}
+			}
+		}
+	}
+}
