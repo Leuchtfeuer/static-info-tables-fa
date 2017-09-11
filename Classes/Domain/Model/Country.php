@@ -5,6 +5,7 @@ namespace SJBR\StaticInfoTables\Domain\Model;
 *
 *  (c) 2011-2012 Armin Rüdiger Vieweg <info@professorweb.de>
 *  (c) 2013 Stanislas Rolland <typo3(arobas)sjbr.ca>
+*  (c) 2017 Florian Wessels <typo3-ext@bitmotion.de>
 *
 *  All rights reserved
 *
@@ -24,37 +25,40 @@ namespace SJBR\StaticInfoTables\Domain\Model;
 *
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
+
 /**
  * The Country model
  *
  * @copyright Copyright belongs to the respective authors
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class Country extends AbstractEntity {
+class Country extends AbstractEntity
+{
 	/**
-	 * The French short name
+	 * The Farsi short name
 	 * @var string
 	 */
 	protected $shortNameFa = '';
 
 	/**
-	 * Sets the French short name.
+	 * Sets the Farsi short name.
 	 *
 	 * @param string $shortNameFa
 	 *
 	 * @return void
 	 */
-	public function setShortNameFa($shortNameFa) {
+	public function setShortNameFa($shortNameFa)
+    {
 		$this->shortNameFa = $shortNameFa;
 	}
 
 	/**
-	 * Gets the French short name.
+	 * Gets the Farsi short name.
 	 *
 	 * @return string
 	 */
-	public function getShortNameFa() {
+	public function getShortNameFa()
+    {
 		return $this->shortNameFa;
 	}
 }
-?>

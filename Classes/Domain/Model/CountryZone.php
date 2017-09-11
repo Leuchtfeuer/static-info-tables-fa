@@ -5,6 +5,7 @@ namespace SJBR\StaticInfoTables\Domain\Model;
 *
 *  (c) 2011-2012 Armin Rüdiger Vieweg <info@professorweb.de>
 *  (c) 2013 Stanislas Rolland <typo3(arobas)sjbr.ca>
+*  (c) 2017 Florian Wessels <typo3-ext@bitmotion.de>
 *
 *  All rights reserved
 *
@@ -24,40 +25,43 @@ namespace SJBR\StaticInfoTables\Domain\Model;
 *
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
+
 /**
  * The Country Zone model
  *
  * @copyright Copyright belongs to the respective authors
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class CountryZone extends AbstractEntity {
+class CountryZone extends AbstractEntity
+{
 	/**
-	 * French name of the country zone
+	 * Farsi name of the country zone
 	 * @var string
 	 */
 	protected $nameFa = '';
 
 	/**
-	 * Sets the French name.
+	 * Sets the Farsi name.
 	 *
 	 * @param string $nameFa
 	 *
 	 * @return void
 	 */
-	public function setNameBs($nameFa) {
+	public function setNameBs($nameFa)
+    {
 		$this->nameFa = $nameFa;
 	}
 
 	/**
-	 * Returns French name. If empty returns the localName.
+	 * Returns Farsi name. If empty returns the localName.
 	 *
 	 * @return string
 	 */
-	public function getNameBs() {
+	public function getNameBs()
+    {
 		if ($this->nameFa === '') {
-			return $this->getLocalName();
+			return $this->getNameLocalized();
 		}
 		return $this->nameFa;
 	}
 }
-?>

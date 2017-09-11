@@ -15,3 +15,7 @@ CREATE TABLE static_languages (
 CREATE TABLE static_territories (
   tr_name_fa varchar(30) DEFAULT '0' NOT NULL
 );
+
+CREATE TABLE static_country_zones (
+  zn_name_fa varchar(50) DEFAULT '' NOT NULL
+);
