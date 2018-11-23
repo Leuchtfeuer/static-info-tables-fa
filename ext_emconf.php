@@ -10,31 +10,25 @@
  * writing. "version" and "dependencies" must not be touched!
  ***************************************************************/
 
-$EM_CONF[$_EXTKEY] = array (
-	'title' => 'Static Info Tables (fa)',
-	'description' => 'Farsi (fa) language pack for the Static Info Tables providing localized names for countries, currencies and so on.',
-	'category' => 'misc',
-	'version' => '6.4.1',
-	'state' => 'stable',
-	'uploadfolder' => 0,
-	'createDirs' => '',
-	'clearcacheonload' => false,
-	'author' => 'Florian Wessels',
-	'author_email' => 'typo3-ext@bitmotion.de',
-	'author_company' => 'Bitmotion GmbH',
-	'constraints' =>
-	array (
-		'depends' => 
-		array (
-			'typo3' => '6.2.0-8.7.99',
-            'static_info_tables' => '6.3.1-6.99.99',
-		),
-		'conflicts' => 
-		array (
-		),
-		'suggests' => 
-		array (
-		),
-	),
-);
-
+$EM_CONF[$_EXTKEY] = [
+    'title' => 'Static Info Tables (fa)',
+    'description' => 'Farsi (fa) language pack for the Static Info Tables providing localized names for countries, currencies and so on.',
+    'category' => 'misc',
+    'version' => '6.7.0',
+    'state' => 'stable',
+    'uploadfolder' => false,
+    'createDirs' => '',
+    'clearcacheonload' => false,
+    'author' => 'Florian Wessels',
+    'author_email' => 'typo3-ext@bitmotion.de',
+    'author_company' => 'Bitmotion GmbH',
+    'constraints' => [
+        'depends' => [
+            'typo3' => '8.7.0-9.5.99',
+            'php' => '7.0.0-0.0.0',
+            'static_info_tables' => '6.7.0-6.7.99',
+        ],
+        'conflicts' => [],
+        'suggests' => [],
+    ],
+];
