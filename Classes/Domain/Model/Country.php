@@ -5,6 +5,9 @@ namespace SJBR\StaticInfoTables\Domain\Model;
 
 class Country extends AbstractEntity
 {
+    /**
+     * @var string
+     */
     protected $shortNameFa = '';
 
     public function getShortNameFa(): string
