@@ -10,11 +10,17 @@ class Country extends AbstractEntity
      */
     protected $shortNameFa = '';
 
+    /**
+     * @return string
+     */
     public function getShortNameFa(): string
     {
         return $this->shortNameFa;
     }
 
+    /**
+     * @param string $shortNameFa
+     */
     public function setShortNameFa(string $shortNameFa)
     {
         $this->shortNameFa = $shortNameFa;
