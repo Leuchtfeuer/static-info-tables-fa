@@ -5,8 +5,14 @@ namespace SJBR\StaticInfoTables\Domain\Model;
 
 class CountryZone extends AbstractEntity
 {
+    /**
+     * @var string
+     */
     protected $nameFa = '';
 
+    /**
+     * @return string
+     */
     public function getNameFa(): string
     {
         if ($this->nameFa === '') {
@@ -16,6 +22,9 @@ class CountryZone extends AbstractEntity
         return $this->nameFa;
     }
 
+    /**
+     * @param string $nameFa
+     */
     public function setNameFa(string $nameFa)
     {
         $this->nameFa = $nameFa;
