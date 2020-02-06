@@ -3,11 +3,22 @@ declare(strict_types = 1);
 
 namespace Bitmotion\StaticInfoTablesFa;
 
-use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
-use TYPO3\CMS\Extbase\Object\ObjectManager;
+/***
+ *
+ * This file is part of the "Static Info Tables (FA)" Extension for TYPO3 CMS.
+ *
+ * For the full copyright and license information, please read the
+ * LICENSE.txt file that was distributed with this source code.
+ *
+ *  (c) 2018 Florian Wessels <f.wessels@bitmotion.de>, Bitmotion GmbH
+ *
+ ***/
+
 use SJBR\StaticInfoTables\Cache\ClassCacheManager;
 use SJBR\StaticInfoTables\Utility\DatabaseUpdateUtility;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Extbase\Object\ObjectManager;
+use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
 
 class ext_update
 {
