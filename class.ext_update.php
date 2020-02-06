@@ -22,26 +22,19 @@ use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
 
 class ext_update
 {
-    /**
-     * Main function, returning the HTML content
-     */
     public function main(): string
     {
         $objectManager = GeneralUtility::makeInstance(ObjectManager::class);
 
-        // Clear the class cache
-        /** @var ClassCacheManager $classCacheManager */
-        $classCacheManager = $objectManager->get(ClassCacheManager::class);
-        $classCacheManager->reBuild();
+        // Clear the class cache and update the database
+        $objectManager->get(ClassCacheManager::class)->reBuild();
+        $objectManager->get(DatabaseUpdateUtility::class)->doUpdate(Extension::EXTENSION_KEY);
 
-        // Update the database
-        /** @var DatabaseUpdateUtility $databaseUpdateUtility */
-        $databaseUpdateUtility = $objectManager->get(DatabaseUpdateUtility::class);
-        $databaseUpdateUtility->doUpdate(Extension::EXTENSION_KEY);
-
-        $updateLanguageLabels = LocalizationUtility::translate('updateLanguageLabels', 'StaticInfoTables');
-
-        return '<p>' . $updateLanguageLabels . ' ' . Extension::EXTENSION_KEY . '</p>';
+        return sprintf(
+            '<p>%s %s</p>',
+            LocalizationUtility::translate('updateLanguageLabels', 'StaticInfoTables'),
+            Extension::EXTENSION_KEY
+        );
     }
 
     public function access(): bool
