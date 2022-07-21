@@ -1,45 +1,44 @@
 {
-  "name": "leuchtfeuer/static-info-tables-fa",
-  "description": "Farsi (fa) language pack for the Static Info Tables providing localized names for countries, currencies and so on.",
-  "type": "typo3-cms-extension",
-  "license": "GPL-2.0-or-later",
-  "homepage": "https://www.Leuchtfeuer.com",
-  "authors": [
-    {
-      "name": "Florian Wessels",
-      "role": "Developer",
-      "email": "f.wessels@Leuchtfeuer.com",
-      "homepage": "https://www.Leuchtfeuer.com"
-    },
-    {
-      "name": "Max Rösch",
-      "role": "Developer",
-      "email": "m.roesch@Leuchtfeuer.com",
-      "homepage": "https://www.Leuchtfeuer.com"
-    }
-  ],
-  "support": {
-    "issues": "https://github.com/Leuchtfeuer/static-info-tables-fa/issues",
-    "source": "https://github.com/Leuchtfeuer/static-info-tables-fa",
-    "email": "dev@Leuchtfeuer.com"
-  },
-  "replace": {
-    "bitmotion/static-info-tables-fa": "self.version",
-    "typo3-ter/static-info-tables-fa": "self.version"
-  },
-  "require": {
-    "typo3/cms-core": "^9.5.17 || ^10.4.2",
-    "typo3/cms-extbase": "^9.5.17 || ^10.4.2",
-    "sjbr/static-info-tables": "^6.9"
-  },
-  "autoload": {
-    "psr-4": {
-      "Bitmotion\\StaticInfoTablesFa\\": "Classes/"
-    }
-  },
-  "extra": {
-    "typo3/cms": {
-      "extension-key": "static_info_tables_fa"
-    }
-  }
+	"name": "leuchtfeuer/static-info-tables-fa",
+	"description": "Farsi (fa) language pack for the Static Info Tables providing localized names for countries, currencies and so on.",
+	"type": "typo3-cms-extension",
+	"license": "GPL-2.0-or-later",
+	"homepage": "https://www.Leuchtfeuer.com",
+	"authors": [
+		{
+			"name": "Florian Wessels",
+			"role": "Developer",
+			"email": "flo.wessels@gmail.com"
+		},
+		{
+			"name": "Max Rösch",
+			"role": "Developer",
+			"email": "typo3@elbebass.com",
+			"homepage": "https://www.Leuchtfeuer.com"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/Leuchtfeuer/static-info-tables-fa/issues",
+		"source": "https://github.com/Leuchtfeuer/static-info-tables-fa",
+		"email": "dev@Leuchtfeuer.com"
+	},
+	"replace": {
+		"bitmotion/static-info-tables-fa": "self.version",
+		"typo3-ter/static-info-tables-fa": "self.version"
+	},
+	"require": {
+		"typo3/cms-core": "^10.4 || ^11.5",
+		"typo3/cms-extbase": "^10.4 || ^11.5",
+		"sjbr/static-info-tables": "^6.7 || ^11.5"
+	},
+	"autoload": {
+		"psr-4": {
+			"Bitmotion\\StaticInfoTablesFa\\": "Classes/"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "static_info_tables_fa"
+		}
+	}
 }
